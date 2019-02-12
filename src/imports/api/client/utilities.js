@@ -16,8 +16,8 @@ import {
 
 
 let getHTMLTitleBase = function() {
-        var context = Meteor.settings['public'].context.toUpperCase();
-        return context + ' Table Builder';
+        var organization = Meteor.settings['public'].organization;
+        return organization + ' Table Builder';
     },
     getHTMLTitleTbl = function() {
         var base = getHTMLTitleBase(),

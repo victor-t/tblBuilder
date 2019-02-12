@@ -7,7 +7,7 @@ import './navBar.html';
 
 Template.navBar.helpers({
     getTitle(){
-        return Meteor.settings.public.context.toUpperCase();
+        return Meteor.settings.public.organization;
     },
     getClassDebug(){
         if (Meteor.settings.public.debug) return 'navbar-debug';
